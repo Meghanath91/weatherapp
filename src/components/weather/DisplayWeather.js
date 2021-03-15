@@ -7,8 +7,13 @@ import PropTypes from 'prop-types'
  * @return {HTML}
  */
 export default function DisplayWeather({ error, weather }) {
-  const buildUrl = (icon) => {
-    const image = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+  /**
+   * @func buildUrl
+   * @param {string} icon
+   * @return {HTML}
+   */
+  function buildUrl(icon) {
+    const image = `https://openweathermap.org/img/wn/${icon}@2x.png`;
     return image
   }
   return (
