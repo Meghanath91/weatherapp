@@ -7,6 +7,7 @@ import PropTypes from 'prop-types'
  * @return {HTML}
  */
 export default function DisplayWeather({ error, weather }) {
+  const image = require(`http://openweathermap.org/img/wn/${weather.icon}@2x.png`)
   return (
     <section className="display-weather-container">
       {error ? (
@@ -19,7 +20,7 @@ export default function DisplayWeather({ error, weather }) {
           <h3>Temperature Min: {(weather.min - 273).toFixed(2)}</h3>
           <picture className="desc">
             <img
-              src={`http://openweathermap.org/img/wn/${weather.icon}@2x.png`}
+              src={image}
               alt="weather"
             />
             <h3 className="weather-desc">{weather.description}</h3>
