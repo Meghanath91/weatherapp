@@ -1,0 +1,29 @@
+.drop-down {
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.main-container {
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.form-container {
+  width: 50%;
+}
+.desc {
+  display: flex;
+}
+.weather-desc {
+  margin-top: 12%;
+}
+.error {
+  color: red;
+}
+.search-button {
+  width: 72%;
+}
+.display-weather-container {
+  color: rgb(54, 54, 63);
+}
